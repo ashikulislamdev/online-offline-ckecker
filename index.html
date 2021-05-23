@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Internet Status Check</title>
+	<script type="text/javascript">
+		//console.log(navigator.onLine);
+		window.addEventListener("online",function() {
+			document.getElementById('status').innerHTML='You are now in online';
+		});
+
+		window.addEventListener("offline",function() {
+			document.getElementById('status').innerHTML='You are now in offline';
+		});
+	</script>
+</head>
+<body>
+	<div id="status">You are online</div>
+</body>
+
+</html>
